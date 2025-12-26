@@ -1,0 +1,71 @@
+{
+  "IndexPage": {
+    "hero": {
+
+    },
+    "WhatsAppFloat": {
+      "tooltip": "Contact us via WhatsApp"
+    }
+  },
+  "Error": {
+    "title": "Sorry, an unexpected error occurred!",
+    "description": "<p>We apologize for this error we encountered.</p><p>You can try <retry>reloading the page</retry> you were visiting.</p>"
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "description": "Sorry, please check the address bar in your browser or use the navigation to go to a known page.",
+    "retryButton": "Try again",
+    "contactSupport": "Contact support",
+    "goBack": "Go back",
+    "backToHome": "Back to home"
+  },
+  "LocaleLayout": {
+    "name": "Bella Notte | Luxury Nightwear & Home Fashion",
+    "short_name": "Bella Notte",
+    "description": "Experience luxurious comfort with Bella Notte's premium collection of nightwear made from 100% natural cotton. Elegant designs for sophisticated women.",
+    "keywords": [
+      "Bella Notte",
+      "Luxury Nightwear",
+      "Natural Cotton",
+      "Women's Sleepwear",
+      "Premium Pajamas",
+      "Elegant Nightgowns",
+      "Comfortable Sleepwear",
+      "Luxury Home Fashion"
+    ]
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ar {🇸🇦 Arabic} en {🇺🇸 English} other {Unknown}}"
+  },
+  "Header": {
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "collection": "Collection",
+      "features": "Features",
+      "contact": "Contact"
+    },
+    "cta": "Shop Now",
+    "siteName": "Bella Notte",
+    "siteDescription": "Luxury Nightwear"
+  },
+  "Footer": {
+    "home": "Home",
+    "about": "About Us",
+    "collection": "Collection",
+    "features": "Features",
+    "contact": "Contact",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "connectWithUs": "Connect With Us",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "brandName": "Bella Notte",
+    "copyright": "© {year} Bella Notte. All rights reserved",
+    "allRightsReserved": "All rights reserved",
+    "companyDescription": "Experience luxurious comfort that combines the softness of natural cotton with elegant design details.",
+    "followUs": "Follow Us"
+  }
+}
