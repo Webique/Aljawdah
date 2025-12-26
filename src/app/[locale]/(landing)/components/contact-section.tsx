@@ -57,7 +57,7 @@ export default function ContactSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="text-primary mb-4 inline-block text-sm font-semibold uppercase tracking-widest"
+            className="bg-primary/10 text-primary mb-4 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"
           >
             {t("title")}
           </m.span>
