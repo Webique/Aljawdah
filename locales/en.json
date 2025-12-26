@@ -1,7 +1,101 @@
 {
   "IndexPage": {
     "hero": {
-
+      "title": "Al-Jawdah",
+      "subtitle": "Building the Future with Unmatched Quality",
+      "description": "Over 13 years of real estate development expertise, transforming your vision into reality with the highest standards of quality and craftsmanship",
+      "cta": "Contact Us",
+      "exploreProjects": "Explore Our Projects"
+    },
+    "about": {
+      "title": "About Us",
+      "subtitle": "Your Trusted Partner in Real Estate Development",
+      "description": "Since its establishment in 2012 in Taif, Al-Jawdah has solidified its position as one of the leading real estate development companies in the Kingdom. We combine deep expertise with a forward-thinking vision to deliver projects that exceed expectations.",
+      "mission": "Our Mission",
+      "missionText": "To deliver comprehensive real estate solutions that elevate quality of life through innovative projects combining beauty and functionality, with full commitment to the highest standards of quality and safety.",
+      "vision": "Our Vision",
+      "visionText": "To be the first choice in real estate development in the Kingdom, contributing to Vision 2030 by building sustainable and advanced urban communities."
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Complete Solutions for All Your Real Estate Needs",
+      "description": "From design to delivery, we provide comprehensive services with international standards",
+      "sale": {
+        "title": "Residential Construction",
+        "description": "We design and build modern residential projects offering comfort and privacy for families"
+      },
+      "buy": {
+        "title": "Commercial & Government Buildings",
+        "description": "Integrated construction solutions for educational, healthcare, and commercial facilities to the highest specifications"
+      },
+      "rent": {
+        "title": "Renovation & Restoration",
+        "description": "We give old buildings new life while preserving their authentic character"
+      },
+      "consulting": {
+        "title": "Real Estate Brokerage",
+        "description": "Connecting you with the best real estate opportunities with full transparency and integrity"
+      },
+      "management": {
+        "title": "Property Management",
+        "description": "Professional management of your properties ensuring maximum investment returns"
+      },
+      "investment": {
+        "title": "Premium Finishing",
+        "description": "Interior and exterior finishes with the finest materials and meticulous attention to detail"
+      }
+    },
+    "projects": {
+      "title": "Our Projects",
+      "subtitle": "Latest Real Estate Projects",
+      "description": "Discover a collection of the best real estate projects in Taif and the Kingdom",
+      "viewAll": "View All Projects",
+      "location": "Location",
+      "price": "Price",
+      "area": "Area",
+      "sqm": "sqm"
+    },
+    "features": {
+      "title": "Why Al-Jawdah?",
+      "subtitle": "What Sets Us Apart",
+      "description": "Our success is built on solid foundations of experience and commitment",
+      "trust": {
+        "title": "13+ Years Experience",
+        "description": "Over a decade of achievements in the Saudi real estate market"
+      },
+      "experience": {
+        "title": "Specialized Team",
+        "description": "Engineers, designers, and consultants with diverse and distinguished expertise"
+      },
+      "quality": {
+        "title": "Limitless Quality",
+        "description": "We commit to the highest standards at every stage of the project"
+      },
+      "support": {
+        "title": "On-Time Delivery",
+        "description": "We respect your time and commit to delivering projects on schedule"
+      }
+    },
+    "gallery": {
+      "title": "Photo Gallery",
+      "subtitle": "A Glimpse of Our Work",
+      "description": "Browse a collection of our best real estate projects"
+    },
+    "cta": {
+      "title": "Ready to Turn Your Vision into Reality?",
+      "description": "Let us help you build your next project with the highest standards of quality and excellence",
+      "button": "Start Your Project Now"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "We're Here to Help",
+      "description": "Don't hesitate to contact us for any inquiry or request",
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location",
+      "locationValue": "Taif, Al-Wissam",
+      "workingHours": "Working Hours",
+      "workingHoursValue": "Saturday - Thursday: 9 AM - 9 PM"
     },
     "WhatsAppFloat": {
       "tooltip": "Contact us via WhatsApp"
@@ -20,19 +114,10 @@
     "backToHome": "Back to home"
   },
   "LocaleLayout": {
-    "name": "Bella Notte | Luxury Nightwear & Home Fashion",
-    "short_name": "Bella Notte",
-    "description": "Experience luxurious comfort with Bella Notte's premium collection of nightwear made from 100% natural cotton. Elegant designs for sophisticated women.",
-    "keywords": [
-      "Bella Notte",
-      "Luxury Nightwear",
-      "Natural Cotton",
-      "Women's Sleepwear",
-      "Premium Pajamas",
-      "Elegant Nightgowns",
-      "Comfortable Sleepwear",
-      "Luxury Home Fashion"
-    ]
+    "name": "Al-Jawdah | Leading Real Estate Developer in Taif",
+    "short_name": "Al-Jawdah",
+    "description": "Al-Jawdah Real Estate Development - Since 2012, delivering innovative real estate projects in Taif and Saudi Arabia",
+    "keywords": ["Al-Jawdah", "Real Estate Development", "Taif Real Estate", "Construction", "Building Renovation", "Real Estate Brokerage", "Property Management", "Saudi Arabia Real Estate"]
   },
   "LocaleSwitcher": {
     "label": "Change language",
@@ -42,30 +127,31 @@
     "nav": {
       "home": "Home",
       "about": "About Us",
-      "collection": "Collection",
-      "features": "Features",
+      "services": "Services",
+      "projects": "Projects",
       "contact": "Contact"
     },
-    "cta": "Shop Now",
-    "siteName": "Bella Notte",
-    "siteDescription": "Luxury Nightwear"
+    "cta": "Contact Us",
+    "siteName": "Al-Jawdah",
+    "siteDescription": "Real Estate Development"
   },
   "Footer": {
     "home": "Home",
     "about": "About Us",
-    "collection": "Collection",
-    "features": "Features",
+    "services": "Services",
+    "projects": "Projects",
     "contact": "Contact",
     "quickLinks": "Quick Links",
     "contactUs": "Contact Us",
-    "connectWithUs": "Connect With Us",
+    "connectWithUs": "Follow Us",
     "phone": "Phone",
     "email": "Email",
-    "location": "Location",
-    "brandName": "Bella Notte",
-    "copyright": "© {year} Bella Notte. All rights reserved",
+    "location": "Taif, Al-Wissam",
+    "brandName": "Al-Jawdah",
+    "copyright": "© {year} Al-Jawdah Real Estate Development. All rights reserved",
     "allRightsReserved": "All rights reserved",
-    "companyDescription": "Experience luxurious comfort that combines the softness of natural cotton with elegant design details.",
-    "followUs": "Follow Us"
+    "companyDescription": "Since 2012, a leading real estate development company in Saudi Arabia. We strive to deliver innovative projects achieving sustainable economic and social value.",
+    "followUs": "Follow Us",
+    "vision2030": "Contributing to Saudi Vision 2030"
   }
 }

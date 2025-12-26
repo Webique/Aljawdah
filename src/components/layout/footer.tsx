@@ -1,56 +1,70 @@
 "use client";
 
-import { Mail, MapPin, Phone } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 import * as m from "motion/react-m";
+import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
+import InstagramIcon from "@/assets/icons/instagram.svg";
+import SnapchatIcon from "@/assets/icons/snapchat.svg";
+import TikTokIcon from "@/assets/icons/tiktok.svg";
 import Logo from "@/components/ui/logo";
 import { siteConfig } from "@/config/site";
+import { Link } from "@/i18n/navigation.public";
 
-const Footer = () => {
+export default function Footer() {
   const t = useTranslations("Footer");
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
     { label: t("home"), href: "/" },
     { label: t("about"), href: "#about" },
-    { label: t("features"), href: "#features" },
-    { label: t("contact"), href: "#contact" }
+    { label: t("services"), href: "#services" },
+    { label: t("projects"), href: "#projects" }
+  ];
+
+  const socialLinks = [
+    {
+      Icon: InstagramIcon,
+      href: siteConfig.links.instagram,
+      label: "Instagram"
+    },
+    { Icon: SnapchatIcon, href: siteConfig.links.snapchat, label: "Snapchat" },
+    { Icon: TikTokIcon, href: siteConfig.links.tiktok, label: "TikTok" }
   ];
 
   return (
-    <footer className="bg-secondary relative text-white">
-      {/* Animated gradient overlay */}
-      <div className="absolute inset-0 opacity-40">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(254,133,161,0.1),transparent_50%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(58,0,15,0.2),transparent_50%)]" />
-      </div>
+    <footer className="relative bg-zinc-950 text-white">
+      {/* Top accent line */}
+      <div className="via-primary bg-linear-to-r absolute inset-x-0 top-0 h-1 from-transparent to-transparent" />
 
-      {/* Decorative top border */}
-      <div className="via-secondary bg-linear-to-r absolute start-0 top-0 h-1 w-full from-transparent to-transparent" />
-
-      <div className="container relative mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+      <div className="container relative mx-auto px-4 py-16 lg:py-20">
         {/* Main Footer Content */}
-        <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
-          {/* Company Info - Larger Section */}
+        <div className="grid gap-12 lg:grid-cols-12 lg:gap-8">
+          {/* Company Info */}
           <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="lg:col-span-6"
+            className="lg:col-span-5"
           >
-            <Logo imgClassName="w-36 sm:w-40" className="mb-6" />
-            <p className="mb-6 max-w-md text-lg leading-relaxed text-white/90">
+            <Logo className="mb-6" imgClassName="w-28 sm:w-32" />
+            <p className="mb-8 max-w-md text-sm leading-relaxed text-white/70">
               {t("companyDescription")}
             </p>
-            <div className="flex items-center gap-2 text-sm text-white/70">
-              <span
-                className="text-brand-pink text-base font-semibold italic"
-                style={{ fontFamily: "serif" }}
-              >
-                &ldquo;Parce que votre nuit mérite d&rsquo;être belle&rdquo;
-              </span>
+
+            {/* Vision 2030 Badge */}
+            <div className="inline-flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3">
+              <ExportedImage
+                src="/images/saudi-2030-vision.png"
+                alt="Saudi Vision 2030"
+                width={50}
+                height={35}
+                className="h-8 w-auto"
+              />
+              <div className="h-6 w-px bg-white/20" />
+              <span className="text-xs text-white/60">{t("vision2030")}</span>
             </div>
           </m.div>
 
@@ -60,23 +74,20 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
-            className="lg:col-span-3"
+            className="lg:col-span-2"
           >
-            <h3 className="mb-6 text-sm font-bold uppercase tracking-wider text-white/70">
+            <h3 className="text-primary mb-6 text-xs font-semibold uppercase tracking-widest">
               {t("quickLinks")}
             </h3>
-            <ul className="space-y-4">
+            <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.label}>
-                  <a
+                  <Link
                     href={link.href}
-                    className="hover:text-brand-pink group inline-flex items-center text-base text-white/80 transition-all duration-300 hover:translate-x-1 rtl:hover:-translate-x-1"
+                    className="text-sm text-white/60 transition-colors hover:text-white"
                   >
-                    <span className="relative">
-                      {link.label}
-                      <span className="bg-brand-pink absolute bottom-0 start-0 h-0.5 w-0 transition-all duration-300 group-hover:w-full"></span>
-                    </span>
-                  </a>
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -86,72 +97,79 @@ const Footer = () => {
           <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.15 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
             className="lg:col-span-3"
           >
-            <h3 className="mb-6 text-sm font-bold uppercase tracking-wider text-white/70">
+            <h3 className="text-primary mb-6 text-xs font-semibold uppercase tracking-widest">
               {t("contactUs")}
             </h3>
             <div className="space-y-4">
-              <m.a
+              <a
                 href={`tel:${siteConfig.support.phone}`}
-                className="hover:text-brand-pink group flex items-center gap-3 text-sm text-white/80 transition-colors"
-                whileHover={{ x: 4 }}
+                className="flex items-center gap-3 text-white/60 transition-colors hover:text-white"
               >
-                <div className="bg-brand-pink/20 ring-brand-pink/30 group-hover:bg-brand-pink/30 flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ring-1 transition-all">
-                  <Phone className="text-brand-pink h-4 w-4" />
+                <div className="bg-primary/10 flex h-9 w-9 items-center justify-center rounded-lg">
+                  <Phone className="text-primary h-4 w-4" />
                 </div>
-                <div dir="ltr">{siteConfig.support.phone}</div>
-              </m.a>
+                <span dir="ltr" className="text-sm">
+                  {siteConfig.support.phone}
+                </span>
+              </a>
 
-              <m.a
-                href={`mailto:${siteConfig.support.email}`}
-                className="hover:text-brand-pink group flex items-center gap-3 text-sm text-white/80 transition-colors"
-                whileHover={{ x: 4 }}
-              >
-                <div className="bg-brand-pink/20 ring-brand-pink/30 group-hover:bg-brand-pink/30 flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ring-1 transition-all">
-                  <Mail className="text-brand-pink h-4 w-4" />
+              <div className="flex items-center gap-3 text-white/60">
+                <div className="bg-primary/10 flex h-9 w-9 items-center justify-center rounded-lg">
+                  <MapPin className="text-primary h-4 w-4" />
                 </div>
-                <div className="break-all">{siteConfig.support.email}</div>
-              </m.a>
-
-              <div className="flex items-center gap-3 text-sm text-white/80">
-                <div className="bg-brand-pink/20 ring-brand-pink/30 flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ring-1">
-                  <MapPin className="text-brand-pink h-4 w-4" />
-                </div>
-                <div>{t("location")}</div>
+                <span className="text-sm">{t("location")}</span>
               </div>
             </div>
           </m.div>
+
+          {/* Social Links */}
+          <m.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="lg:col-span-2"
+          >
+            <h3 className="text-primary mb-6 text-xs font-semibold uppercase tracking-widest">
+              {t("followUs")}
+            </h3>
+            <div className="flex gap-2">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:bg-primary group flex h-10 w-10 items-center justify-center rounded-lg bg-white/5 transition-all hover:scale-105"
+                  aria-label={social.label}
+                >
+                  <social.Icon className="h-4 w-4 fill-white/70 text-white/70 group-hover:fill-black group-hover:text-black" />
+                </a>
+              ))}
+            </div>
+          </m.div>
         </div>
+
+        {/* Divider */}
+        <div className="my-10 h-px bg-white/10" />
 
         {/* Bottom Bar */}
         <m.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
           viewport={{ once: true }}
-          className="mt-20 border-t border-white/10 pt-8"
+          className="flex items-center justify-center"
         >
-          <div className="flex flex-col items-center justify-between gap-6 lg:flex-row">
-            <div className="flex flex-col items-center gap-4 lg:flex-row lg:gap-8">
-              <p className="text-sm text-white/70">
-                {t("copyright", { year: currentYear })}
-              </p>
-            </div>
-
-            <div className="flex items-center gap-2 text-xs text-white/50">
-              <span>Made with ♡ for elegant nights</span>
-            </div>
-          </div>
+          <p className="text-xs text-white/50">
+            {t("copyright", { year: currentYear })}
+          </p>
         </m.div>
       </div>
-
-      {/* Bottom gradient accent */}
-      <div className="via-secondary bg-linear-to-r absolute bottom-0 start-0 h-px w-full from-transparent to-transparent" />
     </footer>
   );
-};
-
-export default Footer;
+}

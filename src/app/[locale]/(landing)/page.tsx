@@ -4,17 +4,29 @@ import type { Locale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 
-
+import AboutSection from "./components/about-section";
+import ContactSection from "./components/contact-section";
+import CTASection from "./components/cta-section";
+import FeaturesSection from "./components/features-section";
+import GallerySection from "./components/gallery-section";
+import HeroSection from "./components/hero-section";
+import ProjectsSection from "./components/projects-section";
+import ServicesSection from "./components/services-section";
 
 export default function IndexPage({ params }: PageProps) {
   const { locale } = use(params);
-
-  // Enable static rendering
   setRequestLocale(locale as Locale);
 
   return (
     <main>
-
+      <HeroSection />
+      <AboutSection />
+      <ServicesSection />
+      <ProjectsSection />
+      <FeaturesSection />
+      <GallerySection />
+      <CTASection />
+      <ContactSection />
     </main>
   );
 }
