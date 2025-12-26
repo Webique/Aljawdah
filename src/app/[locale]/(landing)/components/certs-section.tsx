@@ -25,7 +25,12 @@ export default function CertsSection() {
           viewport={{ once: true }}
           className="mb-12 text-center"
         >
-          <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
+          <div className="bg-primary/10 text-primary mx-auto mb-4 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium">
+            {t("badge")}
+          </div>
+          <h2 className="text-secondary text-3xl font-bold md:text-4xl">
+            {t("title")}
+          </h2>
         </m.div>
 
         {/* First row - 3 images */}
@@ -37,7 +42,7 @@ export default function CertsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="group overflow-hidden rounded-2xl border-2 border-black bg-white shadow-lg"
+              className="group overflow-hidden rounded-2xl border-4 border-black bg-white shadow-lg"
             >
               <ExportedImage
                 src={cert.src}
@@ -59,7 +64,7 @@ export default function CertsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: (index + 3) * 0.1 }}
               viewport={{ once: true }}
-              className="group overflow-hidden rounded-2xl border-2 border-black bg-white shadow-lg"
+              className="group overflow-hidden rounded-2xl border-4 border-black bg-white shadow-lg"
             >
               <ExportedImage
                 src={cert.src}
