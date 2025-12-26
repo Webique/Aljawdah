@@ -17,14 +17,14 @@ export default function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <ExportedImage
-          src="/images/1.jpg"
+          src="/images/hero.jpg"
           alt="Real Estate"
           fill
           className="object-cover"
           priority
         />
-        <div className="bg-linear-to-b from-secondary/90 via-secondary/70 to-secondary/90 absolute inset-0" />
-        <div className="bg-linear-to-r from-secondary/80 absolute inset-0 to-transparent" />
+        <div className="bg-linear-to-b absolute inset-0 from-black/30 via-black/20 to-black/10" />
+        <div className="bg-linear-to-r absolute inset-0 from-black/20 to-transparent" />
       </div>
 
       {/* Decorative Elements */}
@@ -82,7 +82,7 @@ export default function HeroSection() {
             >
               <Button
                 size="lg"
-                className="bg-primary text-secondary hover:bg-primary/90 h-auto gap-2 rounded-full px-8 py-4 text-base font-bold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                className="bg-primary text-secondary hover:bg-primary/90 h-auto min-w-[180px] gap-2 rounded-full px-8 py-4 text-base font-bold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 asChild
               >
                 <Link

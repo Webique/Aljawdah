@@ -4,15 +4,31 @@ import { Award, HeadphonesIcon, Shield, Star } from "lucide-react";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
 
-const features = [
-  { key: "trust", icon: Shield },
-  { key: "experience", icon: Award },
-  { key: "quality", icon: Star },
-  { key: "support", icon: HeadphonesIcon }
-];
-
 export default function FeaturesSection() {
   const t = useTranslations("IndexPage.features");
+
+  const features = [
+    {
+      title: t("trust.title"),
+      description: t("trust.description"),
+      icon: Shield
+    },
+    {
+      title: t("experience.title"),
+      description: t("experience.description"),
+      icon: Award
+    },
+    {
+      title: t("quality.title"),
+      description: t("quality.description"),
+      icon: Star
+    },
+    {
+      title: t("support.title"),
+      description: t("support.description"),
+      icon: HeadphonesIcon
+    }
+  ];
 
   return (
     <section className="bg-secondary relative overflow-hidden py-20 lg:py-32">
@@ -60,7 +76,7 @@ export default function FeaturesSection() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
             <m.div
-              key={feature.key}
+              key={feature.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -73,12 +89,10 @@ export default function FeaturesSection() {
                 </div>
 
                 <h3 className="mb-3 text-xl font-bold text-white">
-                  {t(`${feature.key}.title`)}
+                  {feature.title}
                 </h3>
 
-                <p className="text-white/70">
-                  {t(`${feature.key}.description`)}
-                </p>
+                <p className="text-white/70">{feature.description}</p>
               </div>
             </m.div>
           ))}
