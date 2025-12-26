@@ -12,6 +12,8 @@ import GallerySection from "./components/gallery-section";
 import HeroSection from "./components/hero-section";
 import ProjectsSection from "./components/projects-section";
 import ServicesSection from "./components/services-section";
+import ValuesSection from "./components/values-section";
+import VisionMissionSection from "./components/vision-mission-section";
 
 export default function IndexPage({ params }: PageProps) {
   const { locale } = use(params);
@@ -21,6 +23,8 @@ export default function IndexPage({ params }: PageProps) {
     <main>
       <HeroSection />
       <AboutSection />
+      <VisionMissionSection />
+      <ValuesSection />
       <ServicesSection />
       <ProjectsSection />
       <FeaturesSection />

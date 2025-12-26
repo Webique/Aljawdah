@@ -9,12 +9,37 @@
     },
     "about": {
       "title": "About Us",
-      "subtitle": "Your Trusted Partner in Real Estate Development",
-      "description": "Since its establishment in 2012 in Taif, Al-Jawdah has solidified its position as one of the leading real estate development companies in the Kingdom. We combine deep expertise with a forward-thinking vision to deliver projects that exceed expectations.",
-      "mission": "Our Mission",
-      "missionText": "To deliver comprehensive real estate solutions that elevate quality of life through innovative projects combining beauty and functionality, with full commitment to the highest standards of quality and safety.",
+      "subtitle": "Al-Jawdah Premium Real Estate Development",
+      "description": "Since its launch in 2012 in Taif, \"Al-Jawdah Premium\" Real Estate Development has distinguished itself as a leading institution in the real estate development sector in Saudi Arabia.",
+      "descriptionExtended": "With over a decade of experience and an ambitious vision driven by a passion for quality, the company strives to deliver innovative real estate projects that combine modern design with a vision that exceeds expectations.",
+      "yearsExperience": "Years of Leadership"
+    },
+    "visionMission": {
+      "title": "Our Vision & Mission",
       "vision": "Our Vision",
-      "visionText": "To be the first choice in real estate development in the Kingdom, contributing to Vision 2030 by building sustainable and advanced urban communities."
+      "visionText": "To become the premier destination for luxury real estate development, by delivering innovative projects that achieve sustainable economic and social value, in line with Saudi Vision 2030 in building smart and futuristic cities.",
+      "mission": "Our Mission",
+      "missionText": "We work with passion and creativity to design and implement real estate projects that inspire individuals and enhance their quality of life, while adhering to the highest standards of quality and innovation. Through our services, we strive to support sustainable development and create an integrated real estate environment."
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "We adhere to fundamental principles that ensure our success and excellence",
+      "value1": {
+        "title": "Establishing Position",
+        "description": "Establishing our position as a real estate developer that achieves positive and sustainable impact"
+      },
+      "value2": {
+        "title": "Integrated Projects",
+        "description": "Delivering integrated real estate projects that meet diverse market needs"
+      },
+      "value3": {
+        "title": "Strategic Partnerships",
+        "description": "Strengthening local and international partnerships to ensure sustainable growth"
+      },
+      "value4": {
+        "title": "Vision 2030",
+        "description": "Contributing to infrastructure development in line with Saudi Vision 2030"
+      }
     },
     "services": {
       "title": "Our Services",

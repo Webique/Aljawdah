@@ -30,7 +30,7 @@ export default function CTASection() {
 
         {/* Bottom left geometric shape */}
         <svg
-          className="text-secondary/10 absolute -bottom-10 left-10 h-48 w-48"
+          className="text-secondary/10 absolute -bottom-10 start-10 h-48 w-48"
           viewBox="0 0 100 100"
           fill="none"
         >
