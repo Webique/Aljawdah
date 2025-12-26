@@ -82,9 +82,14 @@
       "description": "Browse a collection of our best real estate projects"
     },
     "cta": {
+      "badge": "Let's Build Together",
       "title": "Ready to Turn Your Vision into Reality?",
-      "description": "Let us help you build your next project with the highest standards of quality and excellence",
-      "button": "Start Your Project Now"
+      "description": "Let us help you build your next project with the highest standards of quality and excellence. Our team of experts is ready to guide you every step of the way.",
+      "button": "Start Your Project",
+      "callUs": "Call Us Now",
+      "available": "Available Now",
+      "fastResponse": "Fast Response",
+      "freeConsultation": "Free Consultation"
     },
     "contact": {
       "title": "Contact Us",
