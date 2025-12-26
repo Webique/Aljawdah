@@ -106,7 +106,7 @@ export default function Header() {
             <LocaleSwitcher isTop={isScrolled} />
 
             <Button
-              className="bg-primary hover:bg-primary/90 ring-primary/20 hover:shadow-primary/40 group h-auto gap-2 rounded-full px-8 py-4 text-base font-bold text-white shadow-md ring-2 transition-all duration-300 hover:scale-105 hover:shadow-lg has-[>svg]:px-8 lg:flex"
+              className="hover:shadow-primary/40 group h-auto gap-2 rounded-full px-8 py-4 text-base font-bold shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg has-[>svg]:px-8 lg:flex"
               asChild
             >
               <Link
@@ -213,7 +213,7 @@ export default function Header() {
                 className="border-border/20 mt-6 border-t pt-6"
               >
                 <Button
-                  className="bg-primary hover:bg-primary/90 ring-primary/20 h-auto w-full items-center gap-3 rounded-xl px-6 py-4 text-base font-semibold text-white shadow-xl ring-2 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                  className="h-auto w-full items-center gap-3 rounded-xl px-6 py-4 text-base font-semibold shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                   asChild
                 >
                   <a

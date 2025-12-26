@@ -46,107 +46,107 @@
   --radius: 0.625rem;
 
   /* Al-Jawdah Real Estate Brand Colors */
-  --brand-gold: #E3B950;
-  --brand-gold-light: #F0D078;
-  --brand-gold-dark: #C9A040;
-  --brand-navy: #1A2B4A;
-  --brand-navy-dark: #0F1A2E;
-  --brand-cream: #FAF8F5;
-  --brand-warm-white: #FEFDFB;
+  --brand-gold: #e3b950;
+  --brand-gold-light: #f0d078;
+  --brand-gold-dark: #c9a040;
+  --brand-navy: #1a2b4a;
+  --brand-navy-dark: #0f1a2e;
+  --brand-cream: #faf8f5;
+  --brand-warm-white: #fefdfb;
 
   /* Main backgrounds - Elegant warm white */
   --background: var(--brand-warm-white);
-  --foreground: #1A2B4A;
+  --foreground: #1a2b4a;
 
   /* Cards and elevated surfaces */
-  --card: #FFFFFF;
-  --card-foreground: #1A2B4A;
-  --popover: #FFFFFF;
-  --popover-foreground: #1A2B4A;
+  --card: #ffffff;
+  --card-foreground: #1a2b4a;
+  --popover: #ffffff;
+  --popover-foreground: #1a2b4a;
 
   /* Al-Jawdah Brand Gold - Primary */
   --primary: var(--brand-gold);
-  --primary-foreground: #1A2B4A;
+  --primary-foreground: #1a2b4a;
 
   /* Al-Jawdah Brand Navy - Secondary */
   --secondary: var(--brand-navy);
-  --secondary-foreground: #FFFFFF;
+  --secondary-foreground: #ffffff;
 
   /* Muted elements - Light cream */
   --muted: var(--brand-cream);
-  --muted-foreground: #6B7280;
+  --muted-foreground: #6b7280;
 
   /* Accent - Darker gold variation */
   --accent: var(--brand-gold-dark);
-  --accent-foreground: #1A2B4A;
+  --accent-foreground: #1a2b4a;
 
   /* Destructive */
-  --destructive: #DC2626;
+  --destructive: #dc2626;
 
   /* Borders and inputs - Subtle separation */
-  --border: #E8E4DE;
-  --input: #E8E4DE;
+  --border: #e8e4de;
+  --input: #e8e4de;
   --ring: var(--brand-gold);
 
   /* Charts - Brand color palette */
   --chart-1: var(--brand-gold);
   --chart-2: var(--brand-navy);
   --chart-3: var(--brand-gold-dark);
-  --chart-4: #0F1A2E;
-  --chart-5: #F0D078;
+  --chart-4: #0f1a2e;
+  --chart-5: #f0d078;
 
   /* Sidebar */
-  --sidebar: #FFFFFF;
-  --sidebar-foreground: #1A2B4A;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1a2b4a;
   --sidebar-primary: var(--brand-gold);
-  --sidebar-primary-foreground: #1A2B4A;
+  --sidebar-primary-foreground: #1a2b4a;
   --sidebar-accent: var(--brand-cream);
-  --sidebar-accent-foreground: #1A2B4A;
-  --sidebar-border: #E8E4DE;
+  --sidebar-accent-foreground: #1a2b4a;
+  --sidebar-border: #e8e4de;
   --sidebar-ring: var(--brand-gold);
 }
 
 .dark {
   /* Dark mode - Professional dark theme */
-  --background: #0F1419;
-  --foreground: #F9FAFB;
+  --background: #0f1419;
+  --foreground: #f9fafb;
 
-  --card: #1A1F26;
-  --card-foreground: #F9FAFB;
-  --popover: #1A1F26;
-  --popover-foreground: #F9FAFB;
+  --card: #1a1f26;
+  --card-foreground: #f9fafb;
+  --popover: #1a1f26;
+  --popover-foreground: #f9fafb;
 
   --primary: var(--brand-gold);
-  --primary-foreground: #1A2B4A;
+  --primary-foreground: #1a2b4a;
 
   --secondary: var(--brand-navy);
-  --secondary-foreground: #FFFFFF;
+  --secondary-foreground: #ffffff;
 
-  --muted: #2A2520;
-  --muted-foreground: #9CA3AF;
+  --muted: #2a2520;
+  --muted-foreground: #9ca3af;
 
   --accent: var(--brand-gold-dark);
-  --accent-foreground: #1A2B4A;
+  --accent-foreground: #1a2b4a;
 
-  --destructive: #EF4444;
+  --destructive: #ef4444;
 
-  --border: #3A3530;
-  --input: #3A3530;
+  --border: #3a3530;
+  --input: #3a3530;
   --ring: var(--brand-gold);
 
   --chart-1: var(--brand-gold);
   --chart-2: var(--brand-navy);
   --chart-3: var(--brand-gold-dark);
-  --chart-4: #0F1A2E;
-  --chart-5: #F0D078;
+  --chart-4: #0f1a2e;
+  --chart-5: #f0d078;
 
-  --sidebar: #1A1F26;
-  --sidebar-foreground: #F9FAFB;
+  --sidebar: #1a1f26;
+  --sidebar-foreground: #f9fafb;
   --sidebar-primary: var(--brand-gold);
-  --sidebar-primary-foreground: #1A2B4A;
-  --sidebar-accent: #2A2520;
-  --sidebar-accent-foreground: #F9FAFB;
-  --sidebar-border: #3A3530;
+  --sidebar-primary-foreground: #1a2b4a;
+  --sidebar-accent: #2a2520;
+  --sidebar-accent-foreground: #f9fafb;
+  --sidebar-border: #3a3530;
   --sidebar-ring: var(--brand-gold);
 }
 
@@ -257,7 +257,11 @@
 
   /* Decorative patterns */
   .pattern-dots {
-    background-image: radial-gradient(circle, rgba(227, 185, 80, 0.1) 1px, transparent 1px);
+    background-image: radial-gradient(
+      circle,
+      rgba(227, 185, 80, 0.1) 1px,
+      transparent 1px
+    );
     background-size: 20px 20px;
   }
 
@@ -270,11 +274,19 @@
 
   /* Gradient overlays */
   .gradient-overlay-primary {
-    background: linear-gradient(135deg, rgba(227, 185, 80, 0.1) 0%, rgba(26, 43, 74, 0.05) 100%);
+    background: linear-gradient(
+      135deg,
+      rgba(227, 185, 80, 0.1) 0%,
+      rgba(26, 43, 74, 0.05) 100%
+    );
   }
 
   .gradient-overlay-secondary {
-    background: linear-gradient(135deg, rgba(26, 43, 74, 0.1) 0%, rgba(15, 26, 46, 0.05) 100%);
+    background: linear-gradient(
+      135deg,
+      rgba(26, 43, 74, 0.1) 0%,
+      rgba(15, 26, 46, 0.05) 100%
+    );
   }
 
   /* Glass morphism */
@@ -308,13 +320,14 @@
   }
 
   .container-wrapper {
-    @apply max-w-[1400px] min-[1800px]:max-w-screen-2xl min-[1400px]:border-x border-border/70 dark:border-border mx-auto w-full border-dashed;
+    @apply border-border/70 dark:border-border mx-auto w-full max-w-[1400px] border-dashed min-[1400px]:border-x min-[1800px]:max-w-screen-2xl;
   }
 }
 
 /* Landing Page Animations */
 @keyframes blob {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0) scale(1);
   }
   33% {
@@ -357,7 +370,8 @@ html {
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -379,7 +393,12 @@ html {
 }
 
 .animate-shimmer {
-  background: linear-gradient(90deg, transparent, rgba(227, 185, 80, 0.1), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(227, 185, 80, 0.1),
+    transparent
+  );
   background-size: 200% 100%;
   animation: shimmer 3s infinite;
 }
