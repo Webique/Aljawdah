@@ -95,7 +95,10 @@
       "location": "Location",
       "locationValue": "Taif, Al-Wissam",
       "workingHours": "Working Hours",
-      "workingHoursValue": "Saturday - Thursday: 9 AM - 9 PM"
+      "workingHoursValue": "Saturday - Thursday: 9 AM - 9 PM",
+      "scanToChat": "Scan to start a conversation",
+      "chatNow": "Chat Now",
+      "whatsapp": "WhatsApp"
     },
     "WhatsAppFloat": {
       "tooltip": "Contact us via WhatsApp"

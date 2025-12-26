@@ -95,7 +95,10 @@
       "location": "الموقع",
       "locationValue": "الطائف، الوسام",
       "workingHours": "ساعات العمل",
-      "workingHoursValue": "السبت - الخميس: 9 صباحاً - 9 مساءً"
+      "workingHoursValue": "السبت - الخميس: 9 صباحاً - 9 مساءً",
+      "scanToChat": "امسح للتواصل معنا",
+      "chatNow": "تواصل الآن",
+      "whatsapp": "واتساب"
     },
     "WhatsAppFloat": {
       "tooltip": "تواصل معنا عبر واتساب"
