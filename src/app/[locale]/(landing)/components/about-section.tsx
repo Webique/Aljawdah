@@ -10,7 +10,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="bg-background relative overflow-hidden py-20 lg:py-32"
+      className="bg-background relative overflow-hidden py-16 lg:py-20"
     >
       <div className="pattern-dots absolute inset-0 opacity-50" />
 

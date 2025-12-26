@@ -36,7 +36,7 @@ export default function ValuesSection() {
   ];
 
   return (
-    <section className="bg-background relative overflow-hidden py-20 lg:py-32">
+    <section className="bg-background relative overflow-hidden py-16 lg:py-20">
       <div className="container relative mx-auto px-4">
         {/* Section Header */}
         <m.div

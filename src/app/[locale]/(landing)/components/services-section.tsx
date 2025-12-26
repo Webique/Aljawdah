@@ -50,7 +50,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="bg-muted relative overflow-hidden py-20 lg:py-32"
+      className="bg-muted relative overflow-hidden py-16 lg:py-20"
     >
       {/* Background Elements */}
       <div className="absolute inset-0">

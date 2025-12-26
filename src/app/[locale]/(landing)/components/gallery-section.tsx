@@ -19,7 +19,7 @@ export default function GallerySection() {
   const t = useTranslations("IndexPage.gallery");
 
   return (
-    <section className="bg-muted relative overflow-hidden py-20 lg:py-32">
+    <section className="bg-muted relative overflow-hidden py-16 lg:py-20">
       <div className="container relative mx-auto px-4">
         {/* Section Header */}
         <div className="mx-auto mb-16 max-w-2xl text-center">

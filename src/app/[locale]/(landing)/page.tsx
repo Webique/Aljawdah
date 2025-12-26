@@ -5,6 +5,7 @@ import { setRequestLocale } from "next-intl/server";
 import { use } from "react";
 
 import AboutSection from "./components/about-section";
+import CertsSection from "./components/certs-section";
 import ContactSection from "./components/contact-section";
 import CTASection from "./components/cta-section";
 import FeaturesSection from "./components/features-section";
@@ -29,6 +30,7 @@ export default function IndexPage({ params }: PageProps) {
       <ProjectsSection />
       <FeaturesSection />
       <GallerySection />
+      <CertsSection />
       <CTASection />
       <ContactSection />
     </main>

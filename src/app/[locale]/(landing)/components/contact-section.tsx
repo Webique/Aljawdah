@@ -41,7 +41,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="from-primary/5 via-background to-background bg-linear-to-b relative overflow-hidden py-24 lg:py-36"
+      className="from-primary/5 via-background to-background bg-linear-to-b relative overflow-hidden py-16 lg:py-20"
     >
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden">

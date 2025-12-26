@@ -1,6 +1,5 @@
 "use client";
 
-import { Eye, Target } from "lucide-react";
 import * as m from "motion/react-m";
 import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
@@ -9,82 +8,76 @@ export default function VisionMissionSection() {
   const t = useTranslations("IndexPage.visionMission");
 
   return (
-    <section className="bg-muted/30 relative overflow-hidden py-20 lg:py-32">
+    <section className="bg-muted/30 relative overflow-hidden py-16 lg:py-20">
       <div className="container relative mx-auto px-4">
-        {/* Section Header */}
-        <m.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mb-16 text-center"
-        >
-          <h2 className="text-secondary text-3xl font-bold md:text-4xl lg:text-5xl">
-            {t("title")}
-          </h2>
-        </m.div>
-
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
-          {/* Vision Card */}
+        {/* Vision Row */}
+        <div className="mb-20 grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <m.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="group relative overflow-hidden rounded-3xl bg-white shadow-lg"
+            className="relative"
           >
-            <div className="relative h-64 overflow-hidden">
+            <div className="aspect-4/3 relative overflow-hidden rounded-3xl shadow-2xl">
               <ExportedImage
-                src="/images/saudi-2030-vision.png"
+                src="/images/vision.jpg"
                 alt="Vision"
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="object-cover"
               />
-              <div className="from-secondary/80 bg-linear-to-t absolute inset-0 to-transparent" />
-              <div className="absolute bottom-6 start-6 flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/20 backdrop-blur-sm">
-                  <Eye className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-white">{t("vision")}</h3>
-              </div>
             </div>
-            <div className="p-8">
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                {t("visionText")}
-              </p>
-            </div>
+            <div className="bg-secondary/20 absolute -end-6 -top-6 -z-10 h-full w-full rounded-3xl" />
           </m.div>
 
-          {/* Mission Card */}
           <m.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="group relative overflow-hidden rounded-3xl bg-white shadow-lg"
           >
-            <div className="relative h-64 overflow-hidden">
+            <div className="bg-primary/10 text-primary mb-4 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium">
+              {t("vision")}
+            </div>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              {t("visionText")}
+            </p>
+          </m.div>
+        </div>
+
+        {/* Mission Row - Reversed */}
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <m.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="order-2 lg:order-1"
+          >
+            <div className="bg-primary/10 text-primary mb-4 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium">
+              {t("mission")}
+            </div>
+            <p className="text-muted-foreground text-lg leading-relaxed">
+              {t("missionText")}
+            </p>
+          </m.div>
+
+          <m.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="relative order-1 lg:order-2"
+          >
+            <div className="aspect-4/3 relative overflow-hidden rounded-3xl shadow-2xl">
               <ExportedImage
-                src="/images/7.jpg"
+                src="/images/mission.jpg"
                 alt="Mission"
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="object-cover"
               />
-              <div className="from-primary/80 bg-linear-to-t absolute inset-0 to-transparent" />
-              <div className="absolute bottom-6 start-6 flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/20 backdrop-blur-sm">
-                  <Target className="h-6 w-6 text-white" />
-                </div>
-                <h3 className="text-2xl font-bold text-white">
-                  {t("mission")}
-                </h3>
-              </div>
             </div>
-            <div className="p-8">
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                {t("missionText")}
-              </p>
-            </div>
+            <div className="bg-primary/20 absolute -start-6 -top-6 -z-10 h-full w-full rounded-3xl" />
           </m.div>
         </div>
       </div>

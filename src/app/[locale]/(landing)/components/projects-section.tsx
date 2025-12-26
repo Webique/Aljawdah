@@ -20,7 +20,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="bg-background relative overflow-hidden py-20 lg:py-32"
+      className="bg-background relative overflow-hidden py-16 lg:py-20"
     >
       {/* Background Pattern */}
       <div className="pattern-grid absolute inset-0 opacity-30" />

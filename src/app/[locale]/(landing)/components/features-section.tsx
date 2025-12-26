@@ -31,7 +31,7 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section className="bg-secondary relative overflow-hidden py-20 lg:py-32">
+    <section className="bg-secondary relative overflow-hidden py-16 lg:py-20">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(227,185,80,0.1),transparent_50%)]" />
