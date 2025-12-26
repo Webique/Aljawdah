@@ -27,20 +27,6 @@ export default function HeroSection() {
         <div className="bg-linear-to-r absolute inset-0 from-black/20 to-transparent" />
       </div>
 
-      {/* Decorative Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <m.div
-          className="bg-primary/10 absolute -end-20 top-20 h-72 w-72 rounded-full blur-3xl"
-          animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3] }}
-          transition={{ duration: 8, repeat: Infinity }}
-        />
-        <m.div
-          className="bg-primary/10 absolute -start-20 bottom-20 h-96 w-96 rounded-full blur-3xl"
-          animate={{ scale: [1.2, 1, 1.2], opacity: [0.5, 0.3, 0.5] }}
-          transition={{ duration: 8, repeat: Infinity }}
-        />
-      </div>
-
       {/* Content */}
       <div className="container relative mx-auto flex min-h-screen items-center px-4 py-32">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
