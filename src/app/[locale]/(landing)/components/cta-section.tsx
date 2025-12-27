@@ -17,7 +17,7 @@ export default function CTASection() {
       <div className="pointer-events-none absolute inset-0">
         {/* Top right decorative lines */}
         <svg
-          className="text-secondary/10 absolute -right-10 top-10 h-60 w-60"
+          className="text-secondary/10 absolute -end-10 top-10 h-60 w-60"
           viewBox="0 0 200 200"
           fill="none"
         >

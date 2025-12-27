@@ -45,7 +45,7 @@ export default function ContactSection() {
     >
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="bg-primary/5 absolute -right-40 -top-40 h-80 w-80 rounded-full blur-3xl" />
+        <div className="bg-primary/5 absolute -end-40 -top-40 h-80 w-80 rounded-full blur-3xl" />
         <div className="bg-primary/5 absolute -bottom-40 -start-40 h-80 w-80 rounded-full blur-3xl" />
       </div>
 
