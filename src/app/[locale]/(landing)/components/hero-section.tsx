@@ -86,7 +86,7 @@ export default function HeroSection() {
                 className="h-auto gap-2 rounded-full border-white/30 bg-white/10 px-8 py-4 text-base font-medium text-white backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/20 hover:text-white"
                 asChild
               >
-                <Link href="#projects">{t("hero.exploreProjects")}</Link>
+                <Link href="#services">{t("hero.exploreServices")}</Link>
               </Button>
             </m.div>
           </div>
