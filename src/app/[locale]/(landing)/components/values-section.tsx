@@ -13,19 +13,19 @@ export default function ValuesSection() {
       titleKey: "value1.title" as const,
       descKey: "value1.description" as const,
       icon: TrendingUp,
-      image: "/images/10.jpg"
+      image: "/images/54.jpg"
     },
     {
       titleKey: "value2.title" as const,
       descKey: "value2.description" as const,
       icon: Building2,
-      image: "/images/17.jpg"
+      image: "/images/33.jpg"
     },
     {
       titleKey: "value3.title" as const,
       descKey: "value3.description" as const,
       icon: Handshake,
-      image: "/images/20.jpg"
+      image: "/images/7.jpg"
     },
     {
       titleKey: "value4.title" as const,
