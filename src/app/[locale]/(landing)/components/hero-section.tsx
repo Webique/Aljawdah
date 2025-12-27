@@ -13,7 +13,7 @@ export default function HeroSection() {
   const t = useTranslations("IndexPage");
 
   return (
-    <section className="bg-secondary relative min-h-screen overflow-hidden">
+    <section className="bg-secondary relative flex min-h-[700px] items-center overflow-hidden sm:min-h-[600px] lg:min-h-screen">
       {/* Background Image */}
       <div className="absolute inset-0">
         <ExportedImage
@@ -28,7 +28,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="container relative mx-auto flex min-h-screen items-center px-4 py-32">
+      <div className="container relative mx-auto flex items-center px-4 py-32">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           {/* Text Content */}
           <div className="flex flex-col justify-center">

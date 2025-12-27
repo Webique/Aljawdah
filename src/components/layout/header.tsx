@@ -55,7 +55,7 @@ export default function Header() {
 
       {/* Main Header */}
       <div className="container mx-auto px-4">
-        <div className="flex h-20 items-center justify-between lg:h-24">
+        <div className="flex h-16 items-center justify-between sm:h-24">
           {/* Logo */}
           <m.div
             initial={{ opacity: 0, x: -20 }}
