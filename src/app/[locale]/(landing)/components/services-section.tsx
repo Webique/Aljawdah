@@ -1,14 +1,7 @@
 "use client";
 
-import {
-  Building,
-  Building2,
-  HandCoins,
-  Home,
-  Key,
-  MessageSquare
-} from "lucide-react";
 import * as m from "motion/react-m";
+import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
 
 export default function ServicesSection() {
@@ -16,32 +9,32 @@ export default function ServicesSection() {
 
   const services = [
     {
-      icon: Building,
+      image: "/images/services/1.jpg",
       title: t("sale.title"),
       description: t("sale.description")
     },
     {
-      icon: Home,
+      image: "/images/services/2.jpg",
       title: t("buy.title"),
       description: t("buy.description")
     },
     {
-      icon: Key,
+      image: "/images/services/3.jpg",
       title: t("rent.title"),
       description: t("rent.description")
     },
     {
-      icon: MessageSquare,
+      image: "/images/services/4.jpg",
       title: t("consulting.title"),
       description: t("consulting.description")
     },
     {
-      icon: Building2,
+      image: "/images/services/5.jpg",
       title: t("management.title"),
       description: t("management.description")
     },
     {
-      icon: HandCoins,
+      image: "/images/services/6.jpg",
       title: t("investment.title"),
       description: t("investment.description")
     }
@@ -102,16 +95,23 @@ export default function ServicesSection() {
               viewport={{ once: true }}
               className="group"
             >
-              <div className="border-border bg-card hover:border-primary/30 h-full rounded-2xl border p-8 transition-all duration-300 hover:shadow-xl">
-                <div className="bg-primary/10 group-hover:bg-primary mb-6 flex h-14 w-14 items-center justify-center rounded-xl transition-all duration-300 group-hover:shadow-lg">
-                  <service.icon className="text-primary group-hover:text-secondary h-7 w-7 transition-colors" />
+              <div className="border-border bg-card hover:border-primary/30 h-full overflow-hidden rounded-2xl border transition-all duration-300 hover:shadow-xl">
+                <div className="relative h-48 w-full overflow-hidden">
+                  <ExportedImage
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
                 </div>
 
-                <h3 className="text-secondary mb-3 text-xl font-bold">
-                  {service.title}
-                </h3>
+                <div className="p-6">
+                  <h3 className="text-secondary mb-3 text-xl font-bold">
+                    {service.title}
+                  </h3>
 
-                <p className="text-muted-foreground">{service.description}</p>
+                  <p className="text-muted-foreground">{service.description}</p>
+                </div>
               </div>
             </m.div>
           ))}
