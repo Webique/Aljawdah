@@ -11,7 +11,7 @@
     "about": {
       "title": "About Us",
       "subtitle": "Al-Jawdah Premium Real Estate Development",
-      "description": "Since its launch in 2012 in Taif, \"Al-Jawdah Premium\" Real Estate Development has distinguished itself as a leading institution in the real estate development sector in Saudi Arabia.",
+      "description": "Since its launch in 2012 in Jeddah, Al-Mohammadiyah, \"Al-Jawdah Premium\" Real Estate Development has distinguished itself as a leading institution in the real estate development sector in Saudi Arabia.",
       "descriptionExtended": "With over a decade of experience and an ambitious vision driven by a passion for quality, the company strives to deliver innovative real estate projects that combine modern design with a vision that exceeds expectations.",
       "yearsExperience": "Years of Leadership"
     },
@@ -78,7 +78,7 @@
     "projects": {
       "title": "Our Projects",
       "subtitle": "Latest Real Estate Projects",
-      "description": "Discover a collection of the best real estate projects in Taif and the Kingdom",
+      "description": "Discover a collection of the best real estate projects in Jeddah and the Kingdom",
       "viewAll": "View All Projects",
       "location": "Location",
       "price": "Price",
@@ -128,7 +128,7 @@
       "phone": "Phone",
       "email": "Email",
       "location": "Location",
-      "locationValue": "Taif, Al-Wissam",
+      "locationValue": "Jeddah, Al-Mohammadiyah",
       "workingHours": "Working Hours",
       "workingHoursValue": "Saturday - Thursday: 9 AM - 9 PM",
       "scanToChat": "Scan to start a conversation",
@@ -152,10 +152,10 @@
     "backToHome": "Back to home"
   },
   "LocaleLayout": {
-    "name": "Al-Jawdah | Leading Real Estate Developer in Taif",
+    "name": "Al-Jawdah | Leading Real Estate Developer in Jeddah, Al-Mohammadiyah",
     "short_name": "Al-Jawdah",
-    "description": "Al-Jawdah Real Estate Development - Since 2012, delivering innovative real estate projects in Taif and Saudi Arabia",
-    "keywords": ["Al-Jawdah", "Real Estate Development", "Taif Real Estate", "Construction", "Building Renovation", "Real Estate Brokerage", "Property Management", "Saudi Arabia Real Estate"]
+    "description": "Al-Jawdah Real Estate Development - Since 2012, delivering innovative real estate projects in Jeddah and Saudi Arabia",
+    "keywords": ["Al-Jawdah", "Real Estate Development", "Jeddah Real Estate", "Construction", "Building Renovation", "Real Estate Brokerage", "Property Management", "Saudi Arabia Real Estate"]
   },
   "LocaleSwitcher": {
     "label": "Change language",
@@ -184,7 +184,7 @@
     "connectWithUs": "Follow Us",
     "phone": "Phone",
     "email": "Email",
-    "location": "Taif, Al-Wissam",
+    "location": "Jeddah, Al-Mohammadiyah",
     "brandName": "Al-Jawdah",
     "copyright": "© {year} Al-Jawdah Real Estate Development. All rights reserved",
     "allRightsReserved": "All rights reserved",

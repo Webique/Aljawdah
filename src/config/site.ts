@@ -3,19 +3,19 @@ export const siteConfig = {
     instagram: "https://www.instagram.com/Aljawdahco1",
     snapchat: "https://www.snapchat.com/add/Aljawdah_sa",
     tiktok: "https://www.tiktok.com/@Aljawdahco",
-    whatsapp: "https://wa.me/966504719927"
+    whatsapp: "https://wa.me/966506040210"
   },
 
   support: {
-    phone: "+966 50 471 9927",
+    phone: "+966 50 604 0210",
     email: "info@aljawdah.sa",
-    whatsapp: "+966504719927",
+    whatsapp: "+966506040210",
     landline: "920020960"
   },
 
   location: {
-    city: "Taif",
-    district: "Al-Wissam",
+    city: "Jeddah",
+    district: "Al-Mohammadiyah",
     country: "Saudi Arabia"
   },
 
