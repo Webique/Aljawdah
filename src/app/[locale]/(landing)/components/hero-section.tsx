@@ -15,7 +15,7 @@ export default function HeroSection() {
   return (
     <section className="bg-secondary relative flex min-h-[700px] items-center overflow-hidden sm:min-h-[600px] lg:min-h-screen">
       {/* Background Image */}
-      <div className="absolute inset-0 scale-[0.85] sm:scale-95 lg:scale-100">
+      <div className="absolute inset-0 scale-[0.7] sm:scale-[0.8] lg:scale-100">
         <ExportedImage
           src="/images/hero.jpg"
           alt="Real Estate"
