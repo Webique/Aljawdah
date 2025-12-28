@@ -1,9 +1,12 @@
 "use client";
 
-import { MapPin } from "lucide-react";
+import { MapPin, MessageCircle } from "lucide-react";
 import * as m from "motion/react-m";
 import ExportedImage from "next-image-export-optimizer";
 import { useTranslations } from "next-intl";
+
+import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/config/site";
 
 const projects = [
   { image: "/images/6.jpg", location: "جدة - حي الروضة" },
@@ -16,6 +19,7 @@ const projects = [
 
 export default function ProjectsSection() {
   const t = useTranslations("IndexPage.projects");
+  const tCta = useTranslations("IndexPage.cta");
 
   return (
     <section
@@ -99,6 +103,30 @@ export default function ProjectsSection() {
             </m.div>
           ))}
         </div>
+
+        {/* Interest Form Button */}
+        <m.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="mt-12 text-center"
+        >
+          <Button
+            size="lg"
+            className="bg-primary hover:bg-primary/90 h-auto gap-3 rounded-full px-8 py-4 text-base font-bold shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            asChild
+          >
+            <a
+              href={siteConfig.links.interestForm}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MessageCircle className="h-5 w-5" />
+              {tCta("interestForm")}
+            </a>
+          </Button>
+        </m.div>
       </div>
     </section>
   );

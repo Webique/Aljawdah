@@ -4,7 +4,8 @@ export const siteConfig = {
     snapchat: "https://www.snapchat.com/add/Aljawdah_sa",
     tiktok: "https://www.tiktok.com/@Aljawdahco",
     whatsapp: "https://wa.me/966506040210",
-    maps: "https://maps.app.goo.gl/JbeSYV8mkR1zH88J7?g_st=ic"
+    maps: "https://maps.app.goo.gl/JbeSYV8mkR1zH88J7?g_st=ic",
+    interestForm: "https://docs.google.com/forms/d/e/1FAIpQLSdNoQRV2B1ZXhkMfKqO9OWJpog6TmNP_dy8DjYwluP8kp0s6A/viewform"
   },
 
   support: {

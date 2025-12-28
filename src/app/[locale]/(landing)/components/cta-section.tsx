@@ -122,6 +122,7 @@ export default function CTASection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
+            className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
           >
             <Button
               size="lg"
@@ -136,6 +137,21 @@ export default function CTASection() {
                 <MessageCircle className="size-6" />
                 {t("button")}
               </Link>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-secondary/30 bg-secondary/10 hover:bg-secondary/20 h-auto min-w-[180px] gap-3 rounded-full px-10 py-5 text-lg font-bold text-white shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              asChild
+            >
+              <a
+                href={siteConfig.links.interestForm}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <MessageCircle className="size-6" />
+                {t("interestForm")}
+              </a>
             </Button>
           </m.div>
         </div>
