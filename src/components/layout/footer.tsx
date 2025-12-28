@@ -113,7 +113,7 @@ export default function Footer() {
                   <Phone className="text-primary h-4 w-4" />
                 </div>
                 <span dir="ltr" className="text-sm">
-                  {siteConfig.support.phone}
+                  {siteConfig.support.phone} / {siteConfig.support.landline}
                 </span>
               </a>
 

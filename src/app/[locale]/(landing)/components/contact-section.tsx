@@ -15,7 +15,7 @@ export default function ContactSection() {
     {
       icon: Phone,
       label: t("phone"),
-      value: siteConfig.support.phone,
+      value: `${siteConfig.support.phone} / ${siteConfig.support.landline}`,
       href: `tel:${siteConfig.support.phone}`
     },
     {
