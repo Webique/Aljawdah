@@ -117,12 +117,17 @@ export default function Footer() {
                 </span>
               </a>
 
-              <div className="flex items-center gap-3 text-white/60">
+              <a
+                href={siteConfig.links.maps}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-white/60 transition-colors hover:text-white"
+              >
                 <div className="bg-primary/10 flex h-9 w-9 items-center justify-center rounded-lg">
                   <MapPin className="text-primary h-4 w-4" />
                 </div>
                 <span className="text-sm">{t("location")}</span>
-              </div>
+              </a>
             </div>
           </m.div>
 

@@ -28,7 +28,7 @@ export default function ContactSection() {
       icon: MapPin,
       label: t("location"),
       value: t("locationValue"),
-      href: null
+      href: siteConfig.links.maps
     },
     {
       icon: Clock,
