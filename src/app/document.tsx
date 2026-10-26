@@ -3,6 +3,7 @@ import "./globals.css";
 import { ReactNode } from "react";
 
 import RootProviders from "@/app/root-providers";
+import TikTokPixel from "@/components/tiktok-pixel";
 import { primaryFont } from "@/config/fonts";
 import { cn } from "@/lib/utils";
 
@@ -29,6 +30,7 @@ export default function Document({ children, locale, direction }: Props) {
         )}
       >
         <RootProviders direction={direction}>{children}</RootProviders>
+        <TikTokPixel />
       </body>
     </html>
   );
