@@ -22,7 +22,12 @@ export default function Document({ children, locale, direction }: Props) {
       lang={locale}
       style={{ height: "100%" }}
     >
-      <head />
+      <head>
+        <meta
+          name="facebook-domain-verification"
+          content="2060l0ki4xff1q23gkqhx9s4opi7w3"
+        />
+      </head>
       <body
         suppressHydrationWarning
         className={cn(
